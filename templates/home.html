@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:green">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predictive analysis</h2>
+            <h3>Your Gender</h3><br><input id="first" name="Gender" required="required">
+            <h3>Are you Married</h3><br><input id="second" name="Married" required="required">
+            <h3>The number of Dependants</h3><br><input id="third" name="Dependents" required="required">
+            <h3>Are you Educated</h3><br><input id="fourth" name="Education" required="required">
+            <h3>Are you Self_Employed</h3><br><input id="fifth" name="Self_Employed" required="required">
+            <br><br><button id="sub" type="submit ">Loan Approved or Not</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+    
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+ 
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
